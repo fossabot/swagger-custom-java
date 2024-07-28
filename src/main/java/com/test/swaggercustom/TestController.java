@@ -18,12 +18,18 @@ public class TestController {
     }
 
     @Operation(summary = "일정 추가하기")
-    @PostMapping
-    public void createPlan() {
+    @PostMapping("/create")
+    public String createPlan(String plan) {
+        return "POST 일정 추가하기";
     }
 
     @Operation(summary = "일정 가져오기")
-    @GetMapping
+    @GetMapping({"/v1", "/v2"})
     public void getPlan() {
+    }
+
+    @Operation(summary = "일정 추가하기")
+    @GetMapping("/create")
+    public void createPlan() {
     }
 }

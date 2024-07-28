@@ -15,7 +15,7 @@ import java.util.Map;
 
 
 @Configuration
-public class SwaggerConfig {
+public class SwaggyConfig {
 
     private final ApplicationContext applicationContext;
 
